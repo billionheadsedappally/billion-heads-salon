@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billion Heads Unisex Salon | Edappally</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+    </style>
+</head>
+<body class="bg-black text-zinc-100 selection:bg-amber-500 selection:text-black">
+
+    <!-- Luxury Navbar -->
+    <nav class="sticky top-0 z-50 bg-black/90 backdrop-blur-xl border-b border-zinc-900 px-6 py-4 flex justify-between items-center">
+        <div class="text-lg font-extrabold tracking-widest text-white">
+            BILLION <span class="text-amber-500">HEADS</span>
+            <span class="text-[10px] block text-zinc-500 font-medium tracking-normal">EDAPPALLY BRANCH</span>
+        </div>
+        <div class="space-x-8 text-sm font-medium hidden md:flex text-zinc-400">
+            <a href="#services" class="hover:text-amber-400 transition-colors">Services</a>
+            <a href="#gallery" class="hover:text-amber-400 transition-colors">Gallery</a>
+            <a href="#booking" class="hover:text-amber-400 transition-colors">Book Inquiry</a>
+            <a href="#contact" class="hover:text-amber-400 transition-colors">Location</a>
+        </div>
+        <a href="#booking" class="bg-amber-500 text-black font-bold px-5 py-2.5 rounded-full text-xs tracking-wider uppercase hover:bg-amber-400 transition-all shadow-lg shadow-amber-500/10">
+            Book Now
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative py-28 px-6 text-center max-w-4xl mx-auto flex flex-col items-center justify-center min-h-[75vh] animate-fade-in">
+        <div class="inline-flex items-center gap-2 bg-zinc-900/80 border border-zinc-800 text-amber-400 text-xs font-semibold px-4 py-1.5 rounded-full mb-6">
+            <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+            Celebrating 1 Year of Excellence in Edappally
+        </div>
+        
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-none mb-6">
+            WORLD-CLASS <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">STYLING.</span>
+        </h1>
+        
+        <p class="text-zinc-400 text-base md:text-lg max-w-2xl font-light mb-10 leading-relaxed">
+            Experience premier hair, skin, and grooming services at Billion Heads Edappally. Crafted for those who demand absolute distinction.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
+            <a href="#booking" class="bg-white text-black font-semibold px-8 py-4 rounded-xl hover:bg-amber-500 transition-all text-sm tracking-wide">
+                Book an Appointment
+            </a>
+            <a href="https://share.google/WRrD8X2cDTBWTa4Y0" target="_blank" rel="noopener noreferrer" class="bg-zinc-900 border border-zinc-800 text-zinc-300 font-semibold px-8 py-4 rounded-xl hover:bg-zinc-800 transition-all text-sm">
+                Get Directions
+            </a>
+        </div>
+    </header>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="mb-16">
+            <h2 class="text-xs uppercase tracking-widest text-amber-500 font-bold mb-2">Our Offerings</h2>
+            <h3 class="text-3xl md:text-4xl font-bold tracking-tight">Services & Pricing</h3>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Card 1 -->
+            <div class="bg-zinc-950 border border-zinc-900 p-8 rounded-3xl space-y-4 hover:border-amber-500/50 hover:-translate-y-1 transition-all">
+                <h4 class="text-xl font-bold text-white">Haircuts & Styling</h4>
+                <p class="text-zinc-400 text-sm font-light">Precision cuts, professional hair wash, blow-dry, and tailored styling.</p>
+                <div class="pt-4 flex items-center justify-between border-t border-zinc-900">
+                    <span class="text-xs text-zinc-500 uppercase">Starting at</span>
+                    <span class="text-lg font-bold text-amber-400">From ₹250</span>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-zinc-950 border border-zinc-900 p-8 rounded-3xl space-y-4 hover:border-amber-500/50 hover:-translate-y-1 transition-all">
+                <h4 class="text-xl font-bold text-white">Beard & Grooming</h4>
+                <p class="text-zinc-400 text-sm font-light">Classic hot towel shaves, sharp line-ups, trimming, and beard oil care.</p>
+                <div class="pt-4 flex items-center justify-between border-t border-zinc-900">
+                    <span class="text-xs text-zinc-500 uppercase">Starting at</span>
+                    <span class="text-lg font-bold text-amber-400">From ₹100</span>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-zinc-950 border border-zinc-900 p-8 rounded-3xl space-y-4 hover:border-amber-500/50 hover:-translate-y-1 transition-all">
+                <h4 class="text-xl font-bold text-white">Color & Spa Treatments</h4>
+                <p class="text-zinc-400 text-sm font-light">Global coloring, highlights, root touch-ups, keratin smoothing, and deep spa care.</p>
+                <div class="pt-4 flex items-center justify-between border-t border-zinc-900">
+                    <span class="text-xs text-zinc-500 uppercase">Starting at</span>
+                    <span class="text-lg font-bold text-amber-400">From ₹1,999</span>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-zinc-950 border border-zinc-900 p-8 rounded-3xl space-y-4 hover:border-amber-500/50 hover:-translate-y-1 transition-all">
+                <h4 class="text-xl font-bold text-white">Streak Coloring</h4>
+                <p class="text-zinc-400 text-sm font-light">Men: ₹149 per streak<br>Women: ₹1,999 for 10 streaks combo package.</p>
+                <div class="pt-4 flex items-center justify-between border-t border-zinc-900">
+                    <span class="text-xs text-zinc-500 uppercase">Special Offer</span>
+                    <span class="text-lg font-bold text-amber-400">From ₹149</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual & Video Showcase Section -->
+    <section id="gallery" class="py-24 px-6 border-t border-zinc-900 max-w-6xl mx-auto">
+        <div class="text-center mb-16 space-y-3">
+            <h2 class="text-xs uppercase tracking-widest text-amber-500 font-bold">Visual Showcase</h2>
+            <h3 class="text-3xl md:text-4xl font-bold tracking-tight">Explore Our Work & Vibe</h3>
+            <p class="text-zinc-400 text-sm font-light">Real transformations, client styling, and luxury ambiance from our Edappally salon.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-zinc-950 border border-zinc-900 rounded-3xl overflow-hidden p-3 flex items-center justify-center shadow-2xl">
+                <video autoplay muted loop playsinline class="w-full h-auto max-h-[550px] object-contain rounded-2xl bg-black">
+                    <source src="V1.MP4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="bg-zinc-950 border border-zinc-900 rounded-3xl overflow-hidden p-3 flex items-center justify-center shadow-2xl">
+                <img src="P1.PNG" alt="Salon Showcase" class="w-full h-auto max-h-[550px] object-contain rounded-2xl bg-black">
+            </div>
+            <div class="bg-zinc-950 border border-zinc-900 rounded-3xl overflow-hidden p-3 flex items-center justify-center shadow-2xl">
+                <img src="P2.PNG" alt="Salon Showcase" class="w-full h-auto max-h-[550px] object-contain rounded-2xl bg-black">
+            </div>
+            <div class="bg-zinc-950 border border-zinc-900 rounded-3xl overflow-hidden p-3 flex items-center justify-center shadow-2xl">
+                <img src="P3.JPEG" alt="Salon Showcase" class="w-full h-auto max-h-[550px] object-contain rounded-2xl bg-black">
+            </div>
+            <div class="bg-zinc-950 border border-zinc-900 rounded-3xl overflow-hidden p-3 flex items-center justify-center shadow-2xl">
+                <img src="P4.JPEG" alt="Salon Showcase" class="w-full h-auto max-h-[550px] object-contain rounded-2xl bg-black">
+            </div>
+            <div class="bg-zinc-950 border border-zinc-900 rounded-3xl overflow-hidden p-3 flex items-center justify-center shadow-2xl">
+                <video autoplay muted loop playsinline class="w-full h-auto max-h-[550px] object-contain rounded-2xl bg-black">
+                    <source src="V2.MP4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="bg-zinc-950 border border-zinc-900 rounded-3xl overflow-hidden p-3 flex items-center justify-center shadow-2xl">
+                <img src="P5.PNG" alt="Salon Showcase" class="w-full h-auto max-h-[550px] object-contain rounded-2xl bg-black">
+            </div>
+            <div class="bg-zinc-950 border border-zinc-900 rounded-3xl overflow-hidden p-3 flex items-center justify-center shadow-2xl md:col-span-2 lg:col-span-2">
+                <img src="P6.PNG" alt="Salon Showcase" class="w-full h-auto max-h-[550px] object-contain rounded-2xl bg-black">
+            </div>
+        </div>
+    </section>
+
+    <!-- Inquiry / Booking Form Section -->
+    <section id="booking" class="py-24 px-6 max-w-3xl mx-auto">
+        <div class="bg-zinc-950 border border-zinc-900 rounded-3xl p-8 md:p-12 space-y-8 shadow-2xl">
+            <div class="text-center space-y-2">
+                <h2 class="text-xs uppercase tracking-widest text-amber-500 font-bold">Get In Touch</h2>
+                <h3 class="text-3xl font-bold tracking-tight">Book An Appointment</h3>
+                <p class="text-zinc-400 text-sm font-light">Fill out your details below and send your booking straight to our WhatsApp.</p>
+            </div>
+
+            <form id="whatsappForm" class="space-y-6" onsubmit="sendToWhatsApp(event)">
+                <div>
+                    <label class="block text-xs uppercase text-zinc-400 font-semibold mb-2">Your Name *</label>
+                    <input type="text" id="clientName" required placeholder="Enter your full name" class="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs uppercase text-zinc-400 font-semibold mb-2">Mobile Number *</label>
+                    <input type="tel" id="clientPhone" required placeholder="Enter your mobile number" class="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs uppercase text-zinc-400 font-semibold mb-2">Service You Want *</label>
+                    <select id="clientService" class="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 text-sm">
+                        <optgroup label="Men's Services & Offers">
+                            <option>Haircut (₹250)</option>
+                            <option>Beard (₹100)</option>
+                            <option>Haircut + Beard + De-Tan (₹699)</option>
+                            <option>Haircut + Beard + Clean Up (₹699)</option>
+                            <option>Haircut + Beard + Spa (₹999)</option>
+                            <option>De-Tan + Clean Up (₹699)</option>
+                            <option>De-Tan + Facial (₹1,149)</option>
+                            <option>Hair Spa (₹799)</option>
+                            <option>Hair Spa + Facial (₹1,499)</option>
+                            <option>Hydra Facial (₹1,499)</option>
+                            <option>Pedicure (₹799)</option>
+                            <option>Manicure (₹399)</option>
+                            <option>Hair Botox (₹2,999)</option>
+                            <option>Grey Coverage (₹1,199)</option>
+                            <option>Hair Colour - Per Streak (₹149)</option>
+                            <option>Dandruff Treatment (₹999)</option>
+                            <option>Hair Spa + Dandruff Treatment (₹1,699)</option>
+                        </optgroup>
+                        <optgroup label="Women's Services & Offers">
+                            <option>Haircut (₹699)</option>
+                            <option>Hair Spa (₹799)</option>
+                            <option>Pedicure (₹799)</option>
+                            <option>Manicure (₹399)</option>
+                            <option>Facial (₹799)</option>
+                            <option>De-Tan + Clean Up (₹799)</option>
+                            <option>De-Tan + Facial (₹1,199)</option>
+                            <option>Hydra Facial (₹1,499)</option>
+                            <option>Hair Spa + Facial (₹1,499)</option>
+                            <option>Facial + Pedicure (₹1,499)</option>
+                            <option>Smoothening (₹4,499)</option>
+                            <option>Hair Botox (₹6,999)</option>
+                            <option>Nanoplastia (₹6,999)</option>
+                            <option>Hair Colour - 10 Streaks (₹1,999)</option>
+                            <option>Ombre (₹3,999)</option>
+                            <option>Balayage (₹4,499)</option>
+                            <option>Global Color (₹4,999)</option>
+                            <option>Dandruff Treatment (₹1,499)</option>
+                            <option>Hair Spa + Dandruff Treatment (₹2,199)</option>
+                            <option>Underarms Wax + Threading (₹149)</option>
+                            <option>Half Leg + Half Arms (₹749)</option>
+                        </optgroup>
+                        <option>Other Services / General Inquiry</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-amber-500 text-black font-bold py-4 rounded-xl hover:bg-amber-400 transition-all text-sm uppercase tracking-wider shadow-lg shadow-amber-500/10 flex items-center justify-center gap-2">
+                    <span>Send Inquiry to WhatsApp</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- JavaScript to Handle WhatsApp Redirect -->
+    <script>
+        function sendToWhatsApp(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('clientName').value;
+            const phone = document.getElementById('clientPhone').value;
+            const service = document.getElementById('clientService').value;
+            
+            const whatsappNumber = '917907412053';
+            
+            const message = `Hello Billion Heads Edappally! 👋%0A%0AI would like to book an appointment:%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Service:* ${encodeURIComponent(service)}`;
+            
+            window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+        }
+    </script>
+
+    <!-- Location & Map Card Section -->
+    <section id="contact" class="py-24 px-6 max-w-5xl mx-auto">
+        <div class="bg-zinc-950 border border-zinc-900 rounded-3xl p-8 md:p-12 grid md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-6">
+                <div>
+                    <h2 class="text-xs uppercase tracking-widest text-amber-500 font-bold mb-2">Location</h2>
+                    <h3 class="text-3xl font-bold tracking-tight">Edappally Branch</h3>
+                </div>
+                <p class="text-zinc-400 text-sm leading-relaxed font-light">
+                    <strong class="text-white block mb-1">Billion Heads Unisex Salon</strong>
+                    Palace Garden, Manimala Rd, Ponekkara<br>
+                    Edappally, Kochi, Kerala 682024
+                </p>
+                <p class="text-zinc-400 text-sm font-light">
+                    <strong class="text-white block mb-1">Hours</strong>
+                    Monday – Sunday: 10:00 AM – 9:00 PM
+                </p>
+                <div>
+                    <a href="tel:+917907412053" class="inline-block bg-amber-500 text-black font-bold px-6 py-3.5 rounded-xl hover:bg-amber-400 hover:scale-105 transition-all text-sm tracking-wide shadow-lg shadow-amber-500/10">
+                        Call: +91 79074 12053
+                    </a>
+                </div>
+            </div>
+            
+            <a href="https://share.google/WRrD8X2cDTBWTa4Y0" target="_blank" rel="noopener noreferrer" class="group h-64 md:h-full min-h-[280px] bg-zinc-900/80 rounded-2xl border border-zinc-800 flex flex-col items-center justify-center text-center p-6 space-y-3 hover:border-amber-500/50 hover:bg-zinc-900 transition-all relative overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-amber-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <svg class="w-10 h-10 text-amber-500 mb-1 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25s-7.5-4.108-7.5-11.25a7.5 7.5 0 1115 0z" /></svg>
+                <span class="text-white font-semibold text-base group-hover:text-amber-400 transition-colors">Open in Google Maps</span>
+                <span class="text-amber-400 text-xs font-semibold tracking-wide uppercase mt-1">Tap to get directions to BILLION HEADS EDAPPALLY</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-zinc-900 py-12 px-6 text-center text-zinc-600 text-xs tracking-wider uppercase">
+        <p>&copy; 2026 Billion Heads Edappally. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
