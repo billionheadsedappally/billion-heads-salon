@@ -1,20 +1,3 @@
-<div class="card" style="overflow: hidden; width: 100%; height: 300px;">
-    <img src="P1.png" alt="Salon Showcase" style="width: 100%; height: 100%; object-fit: cover;">
-</div>
-.gallery img, .showcase img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0.5rem;
-}
-
-<img src="P1.png" alt="Salon Showcase">
-<img src="P2.png" alt="Salon Showcase">
-<img src="P3.jpeg" alt="Salon Showcase">
-<img src="P4.jpeg" alt="Salon Showcase">
-<img src="P5.png" alt="Salon Showcase">
-<img src="P6.png" alt="Salon Showcase">
-
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
@@ -34,16 +17,28 @@
         .animate-fade-in {
             animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         }
+        /* Uniform container for portrait showcase cards */
+        .showcase-card {
+            width: 100%;
+            height: 520px;
+            overflow: hidden;
+            position: relative;
+            background-color: #09090b;
+        }
+        .showcase-card img, 
+        .showcase-card video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
     </style>
 </head>
 <body class="bg-black text-zinc-100 selection:bg-amber-500 selection:text-black">
 
     <!-- Luxury Navbar -->
     <nav class="sticky top-0 z-50 bg-black/90 backdrop-blur-xl border-b border-zinc-900 px-6 py-4 flex justify-between items-center">
-        <<div class="card" style="overflow: hidden; width: 100%; height: 300px;">
-    <img src="P1.png" alt="Salon Showcase" style="width: 100%; height: 100%; object-fit: cover;">
-</div>
-div class="text-lg font-extrabold tracking-widest text-white">
+        <div class="text-lg font-extrabold tracking-widest text-white">
             BILLION <span class="text-amber-500">HEADS</span>
             <span class="text-[10px] block text-zinc-500 font-medium tracking-normal">EDAPPALLY BRANCH</span>
         </div>
@@ -142,35 +137,51 @@ div class="text-lg font-extrabold tracking-widest text-white">
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-zinc-950 border border-zinc-900 rounded-3xl overflow-hidden p-3 flex items-center justify-center shadow-2xl">
-                <video autoplay muted loop playsinline class="w-full h-auto max-h-[550px] object-contain rounded-2xl bg-black">
-                    <source src="V1.MP4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+            <div class="bg-zinc-950 border border-zinc-900 rounded-3xl overflow-hidden shadow-2xl">
+                <div class="showcase-card">
+                    <video autoplay muted loop playsinline>
+                        <source src="V1.MP4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
-            <div class="bg-zinc-950 border border-zinc-900 rounded-3xl overflow-hidden p-3 flex items-center justify-center shadow-2xl">
-                <img src="P1.PNG" alt="Salon Showcase" class="w-full h-auto max-h-[550px] object-contain rounded-2xl bg-black">
+            <div class="bg-zinc-950 border border-zinc-900 rounded-3xl overflow-hidden shadow-2xl">
+                <div class="showcase-card">
+                    <img src="P1.PNG" alt="Salon Showcase P1">
+                </div>
             </div>
-            <div class="bg-zinc-950 border border-zinc-900 rounded-3xl overflow-hidden p-3 flex items-center justify-center shadow-2xl">
-                <img src="P2.PNG" alt="Salon Showcase" class="w-full h-auto max-h-[550px] object-contain rounded-2xl bg-black">
+            <div class="bg-zinc-950 border border-zinc-900 rounded-3xl overflow-hidden shadow-2xl">
+                <div class="showcase-card">
+                    <img src="P2.PNG" alt="Salon Showcase P2">
+                </div>
             </div>
-            <div class="bg-zinc-950 border border-zinc-900 rounded-3xl overflow-hidden p-3 flex items-center justify-center shadow-2xl">
-                <img src="P3.JPEG" alt="Salon Showcase" class="w-full h-auto max-h-[550px] object-contain rounded-2xl bg-black">
+            <div class="bg-zinc-950 border border-zinc-900 rounded-3xl overflow-hidden shadow-2xl">
+                <div class="showcase-card">
+                    <img src="P3.JPEG" alt="Salon Showcase P3">
+                </div>
             </div>
-            <div class="bg-zinc-950 border border-zinc-900 rounded-3xl overflow-hidden p-3 flex items-center justify-center shadow-2xl">
-                <img src="P4.JPEG" alt="Salon Showcase" class="w-full h-auto max-h-[550px] object-contain rounded-2xl bg-black">
+            <div class="bg-zinc-950 border border-zinc-900 rounded-3xl overflow-hidden shadow-2xl">
+                <div class="showcase-card">
+                    <img src="P4.JPEG" alt="Salon Showcase P4">
+                </div>
             </div>
-            <div class="bg-zinc-950 border border-zinc-900 rounded-3xl overflow-hidden p-3 flex items-center justify-center shadow-2xl">
-                <video autoplay muted loop playsinline class="w-full h-auto max-h-[550px] object-contain rounded-2xl bg-black">
-                    <source src="V2.MP4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+            <div class="bg-zinc-950 border border-zinc-900 rounded-3xl overflow-hidden shadow-2xl">
+                <div class="showcase-card">
+                    <video autoplay muted loop playsinline>
+                        <source src="V2.MP4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
-            <div class="bg-zinc-950 border border-zinc-900 rounded-3xl overflow-hidden p-3 flex items-center justify-center shadow-2xl">
-                <img src="P5.PNG" alt="Salon Showcase" class="w-full h-auto max-h-[550px] object-contain rounded-2xl bg-black">
+            <div class="bg-zinc-950 border border-zinc-900 rounded-3xl overflow-hidden shadow-2xl">
+                <div class="showcase-card">
+                    <img src="P5.PNG" alt="Salon Showcase P5">
+                </div>
             </div>
-            <div class="bg-zinc-950 border border-zinc-900 rounded-3xl overflow-hidden p-3 flex items-center justify-center shadow-2xl md:col-span-2 lg:col-span-2">
-                <img src="P6.PNG" alt="Salon Showcase" class="w-full h-auto max-h-[550px] object-contain rounded-2xl bg-black">
+            <div class="bg-zinc-950 border border-zinc-900 rounded-3xl overflow-hidden shadow-2xl md:col-span-2 lg:col-span-2">
+                <div class="showcase-card">
+                    <img src="P6.PNG" alt="Salon Showcase P6">
+                </div>
             </div>
         </div>
     </section>
